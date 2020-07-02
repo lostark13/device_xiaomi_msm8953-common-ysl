@@ -61,6 +61,7 @@ vidc.enc.dcvs.extra-buff-count=2
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.cne.feature=1 \
+persist.cne.feature=1 \
 persist.vendor.dpm.feature=0
 
 # Coresight
@@ -69,12 +70,12 @@ persist.debug.coresight.config=stm-events
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-debug.egl.hw=0 \
+debug.egl.hw=1 \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
 debug.mdpcomp.logs=0 \
 debug.sf.enable_hwc_vds=1 \
-debug.sf.hw=0 \
+debug.sf.hw=1 \
 debug.sf.latch_unsignaled=1 \
 debug.cpurend.vsync=false \
 debug.sf.recomputecrop=0 \
@@ -86,7 +87,7 @@ persist.hwc.mdpcomp.enable=true \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
 ro.sf.lcd_density=320 \
-ro.vendor.display.cabl=2 \
+ro.vendor.display.cabl=0 \
 sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=0 \
@@ -189,6 +190,7 @@ ril.subscription.types=NV,RUIM \
 rild.libargs=-d/dev/smd0 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.iwlan_operation_mode=legacy \
+persist.vendor.radio.redir_party_num=1 \
 ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,20 \
 persist.sys.fflag.override.settings_network_and_internet_v2=true \
